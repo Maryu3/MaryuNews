@@ -1,0 +1,2 @@
+module Maryu::TopHelper
+end

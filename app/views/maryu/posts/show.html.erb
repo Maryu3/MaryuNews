@@ -1,0 +1,8 @@
+<div class="posts-show">
+    <%= @post.title%>
+    <%= @post.content%>
+    <%= @post.news %>
+    <%= link_to "edit",[:edit, :maryu, @post] %>
+    <%= link_to "destroy", [:maryu, @post], method: :delete,data: {confirm: "削除しますか"} %>
+</div>
+

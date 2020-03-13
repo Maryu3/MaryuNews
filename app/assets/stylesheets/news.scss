@@ -1,0 +1,56 @@
+.articles-contents-block{
+    //background-color: #F8F8FF;
+    width:27%;
+    float:left;
+    height:150px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.trix-content img{
+    width:1.5em;
+    height:1.5em;
+    float:right;
+    border-radius: 0.7em;
+    border: 1px solid rgb(134, 130, 130);
+}
+.trix-content .attachment{
+    width:2.1em;
+    height:2.1em
+    
+}
+
+.trix-content h1{
+    padding-bottom: 1em;
+    border-bottom:inset 2px rgb(121, 118, 118) ;
+    letter-spacing: 0.2em;
+    white-space: pre-line; 
+}
+.trix-content a{
+    color:rgb(19, 66, 197);
+}
+// .trix-content a::after{
+//     position: absolute;
+//     content:attr(href);
+//     display:none;
+// }
+// .trix-content a:hover::after{
+//     display: block;
+// }
+
+.attachment__caption{
+    display: none;
+}
+
+.post-time{
+    color:gray;
+}
+
+.wikiarea{
+    display:none;
+    background-color: red;
+}
+
+// .my-small{
+//     // font-size: 0.8em 
+// }

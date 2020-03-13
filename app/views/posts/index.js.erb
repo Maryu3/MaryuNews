@@ -1,0 +1,12 @@
+$(function() {
+    
+    $(".trix-content a").hover(function(){
+        var url = $(this).attr('href');
+        
+        // @page = Wikipedia.find(url)
+        // alert(url);
+    },function(){
+        $(this).css("color", "blue");
+    
+    });
+});

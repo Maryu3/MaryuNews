@@ -1,0 +1,12 @@
+<div class ="f-container">
+    <% @posts.each do |post|%>
+        <div class= f-item>
+            <%= post.title%>
+            <%= post.content %>
+            <div class="post-time"><%= post.created_at.strftime('%Y/%m/%d') %></div>
+            <a href="https://twiter.com/share?url=https://webdesign-trends.net/entry/3632"><i class="fab fa-twitter-square fa-lg my-small"></i></a>
+            <a href="http://www.facebook.com/share.php?u={URL}" rel="nofollow" target="_blank"><i class="fab fa-facebook-square fa-lg my-small"></i></a>
+            <%= post.news %>
+        </div>
+    <% end %>
+</div>

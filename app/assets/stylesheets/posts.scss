@@ -1,0 +1,69 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.form-body{ 
+    height :100px;
+    line-height:1.5em;
+    
+    textarea{
+        line-height: 1.5em;
+        font-size: 15px;
+        letter-spacing: 0.2em;
+        border: 1px solid black;
+        padding:10px
+        
+    }
+}
+
+.form-title{
+    textarea{
+        line-height: 1.5em;
+        font-size: 15px;
+        letter-spacing: 0.2em;
+        border: 1px solid black;
+        padding:10px
+    }
+}
+
+.f-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: space-around;
+}
+
+.f-container .f-item{
+    //flex: auto;
+    width:25%;
+    height:20em;
+    margin-top:4%;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+
+
+
+//タブレット----------------------------------------------------------------------------------------
+@media(max-width:1000px){
+    .f-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .f-container .f-item{
+        
+        width:50%;
+    }
+}
+
+//スマホ----------------------------------------------------------------------------------------------
+@media(max-width:680px){
+    .f-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .f-container .f-item{
+        
+        margin:0 auto;                                //中央寄せ
+    }
+}

@@ -1,0 +1,10 @@
+<div class ="f-container">
+    <% @posts.each do |post|%>
+        <div class= f-item>
+            <%= post.title%>
+            <%= post.content %>
+            <%= post.news %>
+            <%= link_to "show", "/posts/#{post.id}" %>
+        </div>
+    <% end %>
+</div>

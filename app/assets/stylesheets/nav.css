@@ -1,0 +1,182 @@
+/* nav{
+    position: fixed;
+    left:0;
+    float:left;
+    background-color: white;
+    height:1000px;
+    text-align: center;
+    width:12%;
+}
+
+nav.menubar ul{
+    padding-left: 0px;
+}
+
+nav.menubar ul li{
+    font-size:15px;
+    font-weight: bold;
+    letter-spacing: 0.7em;
+    display: inline-block;
+    height:7em;
+    line-height:7em;
+    width:100%;
+}
+nav.menubar ul li a{
+    display: block;
+    color:rgb(32, 31, 31);
+}
+nav.menubar ul li a:hover{
+    background-color:#CCCCCC;
+}
+
+
+
+/* 
+nav{
+    position: fixed;
+    left:0;
+    float:left;
+    background-color: rgb(0, 0, 0);
+    height:1000px;
+    width:12%;
+} */
+.menubar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:12%;
+    margin-top: 7px;
+    position: fixed;
+    left:0;
+    background-color: rgb(0, 0, 0);
+    height:100%;  
+    width:12%;
+    overflow-y: auto; 
+    transform: translateZ(0);                
+}
+.menubar::-webkit-scrollbar {
+    width: 5px;
+}
+.menubar::-webkit-scrollbar-thumb {
+    background: rgba(6, 17, 37, 0.808);
+    border-radius: 10px;
+}
+.menubar::-webkit-scrollbar-track {
+    background: rgba(238, 235, 235, 0.877);
+}
+
+.f-menu{
+    font-size:15px;
+    font-weight: bold;
+    letter-spacing: 0.9em;
+    line-height:7em;
+}
+.f-menu .navli{
+    border-bottom:2px solid rgb(88, 86, 86);
+}
+/* .f-menu .navli a::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0da';
+    font-weight: 900;
+    float:right;
+    color: gray;
+    
+} */
+
+.menubar .f-menu .navli a{
+    display: block;
+    color:rgb(241, 231, 231);
+}
+
+.nav-america{
+    background-image: url("/america.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.opacity{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.navli:hover{
+    background-color:#CCCCCC; 
+    /* background: rgba(255,255,255,0.1); */
+    background-size: 180%;
+} 
+
+
+
+
+
+.nav-japan{
+    background-image: url("/japan.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-uk{
+    background-image: url("/uk.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-china{
+    background-image: url("/china.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-russian{
+    background-image: url("/russian.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-iran{
+    background-image: url("/iran.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-brasil{
+    background-image: url("/brasil.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+
+.nav-germany{
+    background-image: url("/germany.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+
+.nav-india{
+    background-image: url("/india.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-france{
+    background-image: url("/france.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.nav-canada{
+    background-image: url("/canada.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}

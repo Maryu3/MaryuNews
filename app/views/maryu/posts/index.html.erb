@@ -1,0 +1,20 @@
+
+
+<div class ="f-container">
+    <% @posts.each do |post|%>
+        <div class= f-item>
+            <%#  <%= post.image_name %>
+            <%#<%= post.category_id %>
+            <div class="post-title"><%= post.title %></div>
+            <div class="post-content"><%= post.content %></div>
+            <div class="post-time"><%= post.created_at %></div>
+            <div class="post-news"><%= post.news %></div>
+            <%# <%= link_to "show", "/posts/#{post.id}" %> 
+            <%= link_to "show", [:maryu, post] %>
+        </div>
+    
+    <% end %>
+    <%= paginate @posts%>
+    
+</div>
+
