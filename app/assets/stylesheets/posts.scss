@@ -27,43 +27,101 @@
 }
 
 .f-container{
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap:wrap;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    align-content: space-around;
+    max-height: 800px;
+    // justify-content:flex-start;
+    // align-content: space-around;
+}
+
+.f-item100{
+    color:white;
+    background-color: rgb(36, 35, 35);
+    order:0;
+    height:10em;
+    z-index:9;
+    flex-basis:150%;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+    
+    .post-news{
+        padding-top: 3em;
+        text-align: center;
+        letter-spacing: 1em;
+        font-size: large;
+        font-weight: 600;
+    }
+    .post-country{display: none;}
+    .post-time{display: none;}
+    .pageview{
+        display: none;
+    }
+    .pageclose{
+        display: none;
+    }
 }
 
 .f-container .f-item{
     //flex: auto;
-    width:25%;
-    height:20em;
-    margin-top:4%;
-    margin-left: 3%;
-    margin-right: 4%;
+    width:28%;
+    // height:10em;
+    margin-top:2%;
+    margin-left: 2%;
+    margin-right: 3%;
+    // background-color: white;
+    // border:1px solid rgb(206, 202, 202);
+    // border-top: 1px solid rgb(206, 202, 202);
+    .pageview{
+        margin-left: 45%;
+        margin-top: 0.5em;
+        color:rgb(100, 97, 97);
+        font-size: 1.4em 
+    }
+    .pageclose{
+        color:rgb(100, 97, 97);
+        margin-left: 10%;
+        // margin-top: 2em;
+        margin-left: 45%;
+        margin-top: 1em;
+    }
+        .twitter{
+            color:white;
+            background-color:rgb(43, 151, 223);
+            width: 4em;
+            height:1.2em;
+            text-align: center;
+            line-height:1.2em;
+            margin-top: 1em;
+        }
+        .facebook{
+            color:white;
+            background-color:rgb(13, 15, 172);
+            width: 4em;
+            height:1.2em;
+            text-align: center;
+            line-height:1.2em;
+        }
+        .pocket{
+            color:white;
+            background-color:rgb(172, 13, 48);
+            width: 4em;
+            height:1.2em;
+            text-align: center;
+            line-height:1.2em;
+        }
+    
+    
 }
 
-
-
 //タブレット----------------------------------------------------------------------------------------
-@media(max-width:1000px){
+@media(max-width:1024px){
     .f-container{
         display: flex;
         flex-wrap: wrap;
     }
     .f-container .f-item{
         
-        width:50%;
-    }
-}
-
-//スマホ----------------------------------------------------------------------------------------------
-@media(max-width:680px){
-    .f-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .f-container .f-item{
-        
-        margin:0 auto;                                //中央寄せ
+        width:40%;
     }
 }

@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>page_title</title>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# article: http://ogp.me/ns/ article#">
+    <title><%= page_title %></title>
+    <meta name="description" content="/" />
+    <meta property="og:url" content=<%= request.url %> />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content=<% @page_title %> />
+    <%#<meta property="og:description" content= <%= post.content %> 
+    <meta property="og:site_name" content="BetWeen" />
+    <meta property="og:image" content="/" />
+    <meta name="twitter:site" content="@mbaby__8">
+    <meta name="twitter:card" content="summary">
+    <meta property="fb:app_id" content="250609959307951" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%# <%= include_gon %>
     <%#<%= javascript_include_tag "application" %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  
   </head>
 
   <body>

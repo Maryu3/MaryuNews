@@ -44,13 +44,19 @@
 
 .post-time{
     color:gray;
+    float: right;
+    padding-right: 1em;
 }
 
-.wikiarea{
+.post-content{
     display:none;
-    background-color: red;
+    // z-index:9;
+    background-color: white;
 }
+
 
 // .my-small{
 //     // font-size: 0.8em 
 // }
+
+

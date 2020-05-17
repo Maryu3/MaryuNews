@@ -1,45 +1,4 @@
-/* nav{
-    position: fixed;
-    left:0;
-    float:left;
-    background-color: white;
-    height:1000px;
-    text-align: center;
-    width:12%;
-}
 
-nav.menubar ul{
-    padding-left: 0px;
-}
-
-nav.menubar ul li{
-    font-size:15px;
-    font-weight: bold;
-    letter-spacing: 0.7em;
-    display: inline-block;
-    height:7em;
-    line-height:7em;
-    width:100%;
-}
-nav.menubar ul li a{
-    display: block;
-    color:rgb(32, 31, 31);
-}
-nav.menubar ul li a:hover{
-    background-color:#CCCCCC;
-}
-
-
-
-/* 
-nav{
-    position: fixed;
-    left:0;
-    float:left;
-    background-color: rgb(0, 0, 0);
-    height:1000px;
-    width:12%;
-} */
 .menubar{
     display: flex;
     flex-direction: column;
@@ -50,7 +9,6 @@ nav{
     left:0;
     background-color: rgb(0, 0, 0);
     height:100%;  
-    width:12%;
     overflow-y: auto; 
     transform: translateZ(0);                
 }
@@ -68,9 +26,19 @@ nav{
 .f-menu{
     font-size:15px;
     font-weight: bold;
-    letter-spacing: 0.9em;
+    letter-spacing: 0.7em;
     line-height:7em;
 }
+
+
+nav.pagination{
+    position: absolute;
+    bottom: 11%;
+    left:50%;
+    /* word-spacing: 10px; */
+}
+
+
 .f-menu .navli{
     border-bottom:2px solid rgb(88, 86, 86);
 }
@@ -96,12 +64,12 @@ nav{
 }
 .opacity{
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
 }
 .navli:hover{
     background-color:#CCCCCC; 
     /* background: rgba(255,255,255,0.1); */
-    background-size: 180%;
+    background-size: 170%;
 } 
 
 
@@ -180,3 +148,94 @@ nav{
     background-position: 50% 50%;
     
 }
+.nav-uae{
+    background-image: url("/uae.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: small;
+}
+.nav-egypt{
+    background-image: url("/egypt.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-southafrica{
+    background-image: url("/southafrica.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-italiana{
+    background-image: url("/italiana.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-nederland{
+    background-image: url("/nederland.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-argentina{
+    background-image: url("/argentina.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-australia{
+    background-image: url("/australia.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-espana{
+    background-image: url("/espana.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-saudiarabia{
+    background-image: url("/saudiarabia.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-indonesia{
+    background-image: url("/indonesia.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.nav-mexicanos{
+    background-image: url("/mexicanos.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.nav-korea{
+    background-image: url("/korea.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.nav-turkiye{
+    background-image: url("/turkiye.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.nav-nigeria{
+    background-image: url("/nigeria.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+

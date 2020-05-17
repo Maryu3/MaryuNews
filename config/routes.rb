@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  # namespace :maryu do
-  #   get 'top/index'
-  #   resources :posts
-  # end
+  mount ActionCable.server => '/cable'
   
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
@@ -29,6 +26,19 @@ Rails.application.routes.draw do
   get "india" => "categories#india"
   get "france" => "categories#france"
   get "canada" => "categories#canada"
+
+  get "nigeria" => "categories#nigeria"
+  get "korea" => "categories#korea"
+  get "southafrica" => "categories#southafrica"
+  get "italiana" => "categories#italiana"
+  get "argentina" => "categories#argentina"
+  get "australia" => "categories#australia"
+  get "egypt" => "categories#egypt"
+  get "saudiarabia" => "categories#saudiarabia"
+  get "indonesia" => "categories#indonesia"
+  get "mexicanos" => "categories#mexicanos"
+  get "turkiye" => "categories#turkiye"
+  get "un" => "categories#un"
   end
   # resources :posts  #, only: [:index, :show]
   # get "japan" => "categories#japan"

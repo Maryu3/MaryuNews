@@ -1,20 +1,41 @@
+<%= javascript_include_tag "preview.js" %>
+
+<%# <script>
+$(function() {
+    
+    $(".trix-content a").hover(function(){
+        var url = $(this).attr('href');
+
+        // page = Wikipedia.find(url)
+        alert(url);
+    },function(){
+        $(this).css("color", "blue");
+    
+    });
+});
+</script> %>
 
 
 <div class ="f-container">
-    <% @posts.each do |post|%>
-        <div class= f-item>
+    <% @posts.each_with_index do |post, index|%>
+        <div class= "f-item  f-item<%= post.country %>" >
             <%#  <%= post.image_name %>
             <%#<%= post.category_id %>
-            <div class="post-title"><%= post.title %></div>
-            <div class="post-content"><%= post.content %></div>
-            <div class="post-time"><%= post.created_at %></div>
+            <div class="post-country"><%= post.country %></div> 
+        
+            <div class="post-time"><%= post.created_at.strftime('%Y/%m/%d') %></div>
+            
             <div class="post-news"><%= post.news %></div>
-            <%# <%= link_to "show", "/posts/#{post.id}" %> 
+            
+            <div class="post-content"><%= post.content %></div> 
+            <a class="post-content" href="https://twiter.com/share?url=https://webdesign-trends.net/entry/3632"><i class="fab fa-twitter-square fa-lg my-small"></i></a>
+            <a class="post-content" href="http://www.facebook.com/share.php?u={URL}" rel="nofollow" target="_blank"><i class="fab fa-facebook-square fa-lg my-small"></i></a>
+            <span>+</span>
             <%= link_to "show", [:maryu, post] %>
         </div>
-    
+        <%# <%= link_to "show", "/posts/#{post.id}" %> 
+            
     <% end %>
     <%= paginate @posts%>
-    
 </div>
 

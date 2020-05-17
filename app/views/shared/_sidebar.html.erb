@@ -1,36 +1,1152 @@
 
 <div class="menubar">
-    <div class= f-menu>
+        <div class= f-menu>
 
-<% if locale == :ja %>
-        <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
-        <div class="navli nav-japan"><div class="opacity"><%= link_to "日本", "/japan" %></div></div>
-        <div class="navli nav-america"><div class="opacity"><%= link_to "アメリカ",  "/america"%></div></div>
-        <div class="navli nav-uk"><div class="opacity"><%= link_to "イギリス", "/uk"%></div></div>
-        <div class="navli nav-china"><div class="opacity"><%= link_to "中国", "/china" %></div></div>
-        <div class="navli nav-russian"><div class="opacity"><%= link_to "ロシア", "/russian" %></div></div>
-        <div class="navli nav-iran"><div class="opacity"><%= link_to "イラン", "/iran" %></div></div>
-        <div class="navli nav-brasil"><div class="opacity"><%= link_to "ブラジル", "/brasil" %></div></div>
-        <div class="navli nav-germany"><div class="opacity"><%= link_to "ドイツ", "/germany" %></div></div>
-        <div class="navli nav-india"><div class="opacity"><%= link_to "インド", "/india" %></div></div>
-        <div class="navli nav-france"><div class="opacity"><%= link_to "フランス", "/france" %></div></div>
-        <div class="navli nav-canada"><div class="opacity"><%= link_to "カナダ", "/canada" %></div></div>
-        <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
-<%else%>
-        <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
-        <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
-        <div class="navli nav-america"><div class="opacity"><%= link_to "America",  "/america"%></div></div>
-        <div class="navli nav-uk"><div class="opacity"><%= link_to "UK", "/uk"%></div></div>
-        <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
-        <div class="navli nav-russian"><div class="opacity"><%= link_to "Russian", "/russian" %></div></div>
-        <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
-        <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
-        <div class="navli nav-germany"><div class="opacity"><%= link_to "Germany", "/germany" %></div></div>
-        <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
-        <div class="navli nav-france"><div class="opacity"><%= link_to "France", "/france" %></div></div>
-        <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
-        <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
-<%end%>
-    </div>
+        <% if locale == :ja %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/ja/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "アメリカ",  "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "中国", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "イギリス", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "日本", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "ロシア", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ブラジル", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ドイツ", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "インド", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "ナイジェリア", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "フランス", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "カナダ", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "韓国", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "南アフリカ", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "イタリア", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "アルゼンチン", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "オーストラリア", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "エジプト", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "サウジアラビア", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "インドネシア", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "メキシコ", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "トルコ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "イラン", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "国際", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :en %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/en/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "America",  "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "UK", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Russian", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Germany", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "France", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "korea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Southafrica", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italiana", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypt", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudiarabia", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexicanos", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turkiye", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "UN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :ar %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "أعلى", "/ar/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "أمريكا", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "الصين", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "المملكة المتحدة", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "اليابان", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "روسيا", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "البرازيل", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ألمانيا", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "الهند", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "نيجيريا", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "فرنسا", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "كندا", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "كوريا الجنوبية", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "جنوب إفريقيا", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "إيطاليا", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "الأرجنتين", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "أستراليا", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "مصر", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "المملكة العربية السعودية", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "إندونيسيا", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "المكسيك", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "تركيا", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "إيران", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "الأمم المتحدة", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "أعلى", :posts %></div></div>
+        <%elsif locale == :cn %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "综合", "/cn/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "美国", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "中国", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "英国", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "日本", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "俄罗斯", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "的巴西", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "德国", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "印度", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "奈及利亚", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "法国", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "的加拿大", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "南韩", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "南非", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "义大利", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "阿根廷", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "澳洲", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "埃及", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "沙特阿拉伯", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "印尼", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "墨西哥", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "火鸡", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "伊朗", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "联合国", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "综合", :posts %></div></div>
+        <%elsif locale == :tw %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "綜合", "/tw/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "美國", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "中國", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "英國", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "日本", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "俄羅斯", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "的巴西", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "德國", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "印度", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "奈及利亞", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "法國", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "的加拿大", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "南韓", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "南非", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "義大利", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "阿根廷", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "澳洲", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "埃及", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "沙特阿拉伯", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "印尼", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "墨西哥", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "火雞", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "伊朗", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "聯合國", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "綜合", :posts %></div></div>
+        <%elsif locale == :es %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/es/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "América", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Reino Unido", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japón", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusia", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Alemania", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Francia", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canadá", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Corea del sur", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Sudáfrica", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egipto", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arabia Saudita", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Pavo", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "NU", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :hi %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "संश्लेषण", "/hi/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "अमेरिका", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "चीन", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "यूनाइटेड किंगडम", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "जापान", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "रूस", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ब्राज़िल", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "जर्मनी", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "भारत", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "नाइजीरिया", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "फ्रांस", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "कनाडा", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "दक्षिण कोरिया", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "दक्षिण अफ्रीका", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "इटली", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "अर्जेंटीना", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ऑस्ट्रेलिया", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "मिस्र", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "सऊदी अरब", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "इंडोनेशिया", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "मेक्सिको", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "टर्की", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ईरान", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "संयुक्त राष्ट्र", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "संश्लेषण", :posts %></div></div>
+        <%elsif locale == :ar %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "شامل", "/ar/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "أمريكا", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "الصين", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "المملكة المتحدة", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "اليابان", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "روسيا", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "البرازيل", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ألمانيا", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "الهند", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "نيجيريا", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "فرنسا", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "كندا", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "كوريا الجنوبية", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "جنوب إفريقيا", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "إيطاليا", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "الأرجنتين", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "أستراليا", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "مصر", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "المملكة العربية السعودية", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "إندونيسيا", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "المكسيك", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "تركيا", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "إيران", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "الأمم المتحدة", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "شامل", :posts %></div></div>
+        <%elsif locale == :bn %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "সংশ্লেষণ", "/bn/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "আমেরিকা", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "চীন", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "যুক্তরাজ্য", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "জাপান", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "রাশিয়া", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ব্রাজিল", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "জার্মানি", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ভারত", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "নাইজিরিয়াদেশ", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ফ্রান্স", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "কানাডা", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "দক্ষিণ কোরিয়া", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "দক্ষিণ আফ্রিকা", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ইতালি", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "আর্জিণ্টিনা", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "অস্ট্রেলিয়া", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "মিশর", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "সৌদি আরব", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ইন্দোনেশিয়া", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "মক্সিকো", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "তুরস্ক", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ইরান", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "জাতিসংঘ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "সংশ্লেষণ", :posts %></div></div>
+        <%elsif locale == :ru %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "синтез", "/ru/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Америка", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Китай", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Великобритания", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Япония", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Россия", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Бразилия", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Германия", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Индия", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Нигерия", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Франция", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Канада", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Южная корея", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Южная африка", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Италия", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Аргентина", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Австралия", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Египет", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Саудовская Аравия", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Индонезия", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Мексика", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "индейка", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Иран", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "Организация Объединенных Наций", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "синтез", :posts %></div></div>
+        <%elsif locale == :pt %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOPO", "/pt/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "América", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Reino Unido", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japão", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rússia", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Alemanha", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Índia", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigéria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "França", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canadá", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Coreia do Sul", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "África do Sul", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Itália", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Austrália", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egito", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arábia Saudita", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonésia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "México", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turquia", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Irã", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "Nações Unidas", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOPO", :posts %></div></div>
+        <%elsif locale == :fr %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "HAUT", "/fr/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amérique", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "La Chine", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Royaume-Uni", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japon", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "La russie", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Le Brésil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Allemagne", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Inde", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigéria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "La France", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Le Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Corée du Sud", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Afrique du sud", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italie", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentine", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australie", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "L'Egypte", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arabie saoudite", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonésie", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexique", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "La Turquie", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "NU", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "HAUT", :posts %></div></div>
+        <%elsif locale == :ms %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/ms/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Inggeris", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Jepun", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusia", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brazil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Jerman", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Perancis", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Korea Selatan", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Afrika Selatan", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Itali", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Mesir", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arab Saudi", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turki", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "PBBB", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :de %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/de/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "VK", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Russland", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasilien", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Deutschland", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Indien", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Frankreich", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Südkorea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Südafrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italien", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentinien", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australien", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Ägypten", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudi-Arabien", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesien", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexiko", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Türkei", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "VN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :pa %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ਵਿਆਪਕ", "/pa/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "ਅਮਰੀਕਾ", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ਚੀਨ", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ਯੂਨਾਈਟਿਡ ਕਿੰਗਡਮ", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ਜਪਾਨ", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "ਰੂਸ", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ਬ੍ਰਾਜ਼ੀਲ", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ਜਰਮਨੀ", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ਭਾਰਤ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "ਨਾਈਜੀਰੀਆ", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ਫਰਾਂਸ", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "ਕਨੇਡਾ", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "ਦੱਖਣੀ ਕੋਰੀਆ", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "ਦੱਖਣੀ ਅਫਰੀਕਾ", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ਇਟਲੀ", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "ਅਰਜਨਟੀਨਾ", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ਆਸਟਰੇਲੀਆ", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ਮਿਸਰ", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "ਸਾ Saudiਦੀ ਅਰਬ", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ਇੰਡੋਨੇਸ਼ੀਆ", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "ਮੈਕਸੀਕੋ", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ਤੁਰਕੀ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ਇਰਾਨ", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ਸੰਯੁਕਤ ਰਾਸ਼ਟਰ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ਚੌੜਾ ਖੇਤਰ", :posts %></div></div>
+        <%elsif locale == :jv %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Lengkap", "/jv/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Inggris", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Jepang", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusia", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Jerman", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Prancis", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Korea Kidul", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Afrika Kidul", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Mesir", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arab Saudi", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turkey", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "PBB", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Lengkap", :posts %></div></div>
+        <%elsif locale == :ko %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "종합", "/ko/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "미국", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "중국", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "영국", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "일본", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "러시아", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "브라질", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "독일", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "인도", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "나이지리아", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "프랑스", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "캐나다", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "한국", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "남아프리카 공화국", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "이탈리아", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "아르헨티나", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "호주", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "이집트", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "사우디", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "인도네시아", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "멕시코", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "터키", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "이란", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "유엔", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "종합", :posts %></div></div>
+        <%elsif locale == :ta %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "விரிவான", "/ta/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "அமெரிக்கா", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "சீனா", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ஐக்கிய இராச்சியம்", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ஜப்பான்", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "ரஷ்யா", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "பிரேசில்", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ஜெர்மனி", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "இந்தியா", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "நைஜீரியா", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "பிரான்ஸ்", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "கனடா", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "தென் கொரியா", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "தென்னாப்பிரிக்கா", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "இத்தாலி", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "அர்ஜென்டினா", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ஆஸ்திரேலியா", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "எகிப்து", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "சவுதி அரேபியா", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "இந்தோனேசியா", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "மெக்சிகோ", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "துருக்கி", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ஈரான்", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ஐக்கிய நாடுகள் சபை", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "விரிவான", :posts %></div></div>
+        <%elsif locale == :vi %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Toàn diện", "/vi/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Mỹ", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Trung quốc", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Vương quốc Anh", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Nhật Bản", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Nga", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brazil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Đức", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Ấn Độ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Pháp", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Hàn Quốc", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Nam Phi", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Ý", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Úc", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Ai Cập", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Ả Rập Saudi", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Thổ Nhĩ Kỳ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "Liên hợp quốc", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Toàn diện", :posts %></div></div>
+        <%elsif locale == :te %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "సింథసిస్", "/te/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "అమెరికా", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "చైనా", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "యునైటెడ్ కింగ్‌డమ్", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "జపాన్", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "రష్యా", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "బ్రెజిల్", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "జర్మనీ", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "భారతదేశం", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "నైజీరియాలో", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ఫ్రాన్స్", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "కెనడా", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "దక్షిణ కొరియా", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "దక్షిణాఫ్రికా", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ఇటలీ", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "అర్జెంటీనా", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ఆస్ట్రేలియా", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ఈజిప్ట్", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "సౌదీ అరేబియా", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ఇండోనేషియా", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "మెక్సికో", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "టర్కీ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ఇరాన్", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ఐక్యరాజ్యసమితి", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "సింథసిస్", :posts %></div></div>
+        <%elsif locale == :mr %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "सर्वसमावेशक", "/mr/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "अमेरिका", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "चीन", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "युनायटेड किंगडम", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "जपान", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "रशिया", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ब्राझील", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "जर्मनी", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "भारत", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "नायजेरिया", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "फ्रान्स", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "कॅनडा", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "दक्षिण कोरिया", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "दक्षिण आफ्रिका", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "इटली", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "अर्जेंटिना", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ऑस्ट्रेलिया", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "इजिप्त", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "सौदी अरेबिया", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "इंडोनेशिया", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "मेक्सिको", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "तुर्की", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "इराण", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "संयुक्त राष्ट्र", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "सर्वसमावेशक", :posts %></div></div>
+        <%elsif locale == :ur %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "جامع", "/ur/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "امریکہ", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "چین", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "برطانیہ", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "جاپان", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "روس", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "برازیل", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "جرمنی", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ہندوستان", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "نائیجیریا", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "فرانس", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "کینیڈا", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "جنوبی کوریا", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "جنوبی افریقہ", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "اٹلی", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "ارجنٹائن", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "آسٹریلیا", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "مصر", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "سعودی عرب", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "انڈونیشیا", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "میکسیکو", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ترکی", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ایران", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "اقوام متحدہ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "جامع", :posts %></div></div>
+        <%elsif locale == :nl %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/nl/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "UK", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusland", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brazilië", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Duitsland", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Frankrijk", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Zuid-Korea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Zuid-Afrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italië", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentinië", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australië", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypte", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudi-Arabië", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesië", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turkije", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "VN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :it %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/it/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "America", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "porcellana", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Regno Unito", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Giappone", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Russia", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasile", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Germania", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Francia", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Corea del Sud", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Sud Africa", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egitto", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arabia Saudita", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Messico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turchia", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "NU", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :tr %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/tr/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Çin", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "UK", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japonya", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusya", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brezilya", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Almanya", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Hindistan", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nijerya", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Fransa", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Güney Kore", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Güney Afrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "İtalya", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Arjantin", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Avustralya", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Mısır", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Suudi Arabistan", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Endonezya", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Meksika", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Türkiye", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "İran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "BM", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :pl %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/pl/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Ameryka", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Chiny", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "UK", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japonia", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rosja", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brazylia", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Niemcy", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Indie", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Francja", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Korea Południowa", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Republika Południowej Afryki", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Włochy", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentyna", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egipt", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arabia Saudyjska", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonezja", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Meksyk", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turcja", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ONZ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :gu %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "વ્યાપક", "/gu/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "અમેરિકા", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ચીન", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "યુનાઇટેડ કિંગડમ", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "જાપાન", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "રશિયા", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "બ્રાઝિલ", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "જર્મની", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ભારત", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "નાઇજીરીયા", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ફ્રાન્સ", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "કેનેડા", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "દક્ષિણ કોરિયા", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "દક્ષિણ આફ્રિકા", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ઇટાલી", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "આર્જેન્ટિના", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to ".સ્ટ્રેલિયા", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ઇજિપ્ત", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "સાઉદી અરેબિયા", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ઇન્ડોનેશિયા", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "મેક્સિકો", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "તુર્કી", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ઈરાન", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "સંયુક્ત રાષ્ટ્ર", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "વ્યાપક", :posts %></div></div>
+        <%elsif locale == :fa %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "جامع", "/fa/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "آمریکا", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "چین", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "انگلستان", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ژاپن", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "روسیه", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "برزیل", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "آلمان", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "هند", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "نیجریه", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "فرانسه", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "کانادا", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "کره جنوبی", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "آفریقای جنوبی", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ایتالیا", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "آرژانتین", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "استرالیا", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "مصر", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "عربستان سعودی", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "اندونزی", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "مکزیک", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ترکیه", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ایران", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "سازمان ملل", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "جامع", :posts %></div></div>
+        <%elsif locale == :th %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "การสังเคราะห์", "/th/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "สหรัฐอเมริกา", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ประเทศจีน", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "สหราชอาณาจักร", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ประเทศญี่ปุ่น", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "รัสเซีย", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "บราซิล", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ประเทศเยอรมัน", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "อินเดีย", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "ประเทศไนจีเรีย", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ฝรั่งเศส", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "แคนาดา", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "เกาหลีใต้", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "แอฟริกาใต้", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "อิตาลี", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "อาร์เจนตินา", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ออสเตรเลีย", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "อียิปต์", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "ซาอุดิอาระเบีย", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "อินโดนีเซีย", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "เม็กซิโก", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ตุรกี", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "อิหร่าน", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ยูเอ็น", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "การสังเคราะห์", :posts %></div></div>
+        <%elsif locale == :uk %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Всебічний", "/uk/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Америка", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Китай", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Великобританія", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Японія", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Росія", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Бразилія", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Німеччина", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Індія", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Нігерія", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Франція", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Канада", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Південна Корея", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Південна Африка", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Італія", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Аргентина", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Австралія", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Єгипет", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Саудівська Аравія", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Індонезія", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Мексика", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Туреччина", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Іран", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "Організація Об'єднаних Націй", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Всебічний", :posts %></div></div>
+        <%elsif locale == :ml %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "സമഗ്രമായ", "/ml/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "അമേരിക്ക", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ചൈന", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "യുണൈറ്റഡ് കിംഗ്ഡം", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ജപ്പാൻ", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "റഷ്യ", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ബ്രസീൽ", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ജർമ്മനി", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ഇന്ത്യ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "നൈജീരിയ", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ഫ്രാൻസ്", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "കാനഡ", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "ദക്ഷിണ കൊറിയ", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "ദക്ഷിണാഫ്രിക്ക", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ഇറ്റലി", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "അർജന്റീന", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ഓസ്‌ട്രേലിയ", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ഈജിപ്ത്", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "സൗദി അറേബ്യ", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ഇന്തോനേഷ്യ", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "മെക്സിക്കോ", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "തുർക്കി", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ഇറാൻ", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ഐക്യരാഷ്ട്രസഭ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "സമഗ്രമായ", :posts %></div></div>
+        <%elsif locale == :kn %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ಸಮಗ್ರ", "/kn/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "ಅಮೆರಿಕ", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ಚೀನಾ", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ಯುನೈಟೆಡ್ ಕಿಂಗ್‌ಡಮ್", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ಜಪಾನ್", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "ರಷ್ಯಾ", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ಬ್ರೆಜಿಲ್", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ಜರ್ಮನಿ", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ಭಾರತ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "ನೈಜೀರಿಯಾ", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ಫ್ರಾನ್ಸ್", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "ಕೆನಡಾ", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "ದಕ್ಷಿಣ ಕೊರಿಯಾ", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ಇಟಲಿ", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "ಅರ್ಜೆಂಟೀನಾ", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ಆಸ್ಟ್ರೇಲಿಯಾ", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ಈಜಿಪ್ಟ್", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "ಸೌದಿ ಅರೇಬಿಯಾ", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ಇಂಡೋನೇಷ್ಯಾ", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "ಮೆಕ್ಸಿಕೊ", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ಟರ್ಕಿ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ಇರಾನ್", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ವಿಶ್ವಸಂಸ್ಥೆ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ಸಮಗ್ರ", :posts %></div></div>
+        <%elsif locale == :az %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Hərtərəfli", "/az/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Çin", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Birləşmiş Krallıq", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Yaponiya", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusiya", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Braziliya", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Almaniya", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Hindistan", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeriya", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Fransa", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Cənubi Koreya", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Cənubi Afrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "İtaliya", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Avstraliya", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Misir", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Səudiyyə Ərəbistanı", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "İndoneziya", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Meksika", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Türkiyə", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "İran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "BMT", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Hərtərəfli", :posts %></div></div>
+        <%elsif locale == :id %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/id/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Cina", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Kerajaan Inggris", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Jepang", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusia", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brazil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Jerman", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Prancis", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Korea Selatan", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Afrika Selatan", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Mesir", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Arab Saudi", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Meksiko", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turki", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "PBB", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :or %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ବିସ୍ତୃତ", "/or/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "ଆମେରିକା", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ଚୀନ୍", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ଯୁକ୍ତରାଜ୍ୟ", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ଜାପାନ", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Russia ଷ", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ବ୍ରାଜିଲ୍", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ଜର୍ମାନୀ", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ଭାରତ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "ନାଇଜେରିଆ |", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ଫ୍ରାନ୍ସ", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "କାନାଡା |", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "ଦକ୍ଷିଣ କୋରିଆ", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "ଦକ୍ଷିଣ ଆଫ୍ରିକା", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ଇଟାଲୀ", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "ଆର୍ଜେଣ୍ଟିନା", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "ଅଷ୍ଟ୍ରେଲିଆ", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ମିଶର", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "ସାଉଦି ଆରବ |", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ଇଣ୍ଡୋନେସିଆ", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "ମେକ୍ସିକୋ |", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ତୁର୍କୀ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ଇରାନ |", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ମିଳିତ ଜାତିସଂଘ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ବିସ୍ତୃତ", :posts %></div></div>
+        <%elsif locale == :my %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ပြည့်စုံသော", "/my/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "အမေရိက", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "တရုတ်", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ယူနိုက်တက်ကင်းဒမ်း", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ဂျပန်", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "ရုရှား", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ဘရာဇီး", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ဂျာမနီ", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "အိန္ဒိယ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "နိုင်ဂျီးရီးယား", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ပြင်သစ်", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "ကနေဒါ", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "တောင်ကိုရီးယား", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "တောင်အာဖရိက", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "အီတလီ", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "အာဂျင်တီးနား", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "သြစတြေးလျ", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "အီဂျစ်", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "ဆော်ဒီအာရေဗျ", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "အင်ဒိုနီးရှား", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "မက္ကစီကို", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "တူရကီ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "အီရန်", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "ကုလသမဂ္ဂ", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "ပြည့်စုံသော", :posts %></div></div>
+        <%elsif locale == :el %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Περιεκτική", "/el/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Αμερική", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Κίνα", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ΗΒ", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Ιαπωνία", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Ρωσία", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Βραζιλία", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Γερμανία", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Ινδία", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Νιγηρία", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Γαλλία", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Καναδάς", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Νότια Κορέα", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Νότια Αφρική", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Ιταλία", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Αργεντινή", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Αυστραλία", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Αίγυπτος", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Σαουδική Αραβία", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Ινδονησία", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Μεξικό", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Τουρκία", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Ιράν", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "Ηνωμένα Έθνη", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "Περιεκτική", :posts %></div></div>
+        <%elsif locale == :am %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "የተሟላ", "/am/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "አሜሪካ", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "ቻይና", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "ዩኬ", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "ጃፓን", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "ሩሲያ", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "ብራዚል", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "ጀርመን", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "ህንድ", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "ናይጄሪያ", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "ፈረንሳይ", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "ካናዳ", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "ደቡብ ኮሪያ", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "ደቡብ አፍሪካ", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "ጣሊያን", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "አርጀንቲና", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "አውስትራሊያ", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "ግብፅ", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "ሳውዲ አረቢያ", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "ኢንዶኔ .ያ", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "ሜክሲኮ", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "ቱርክ", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "ኢራን", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "የተባበሩት መንግስታት", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "የተሟላ", :posts %></div></div>
+        <%elsif locale == :sw %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/sw/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Uchina", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Uingereza", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Urusi", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brazil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Ujerumani", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Ufaransa", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Korea Kusini", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Afrika Kusini", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Ajentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Misiri", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudi Arabia", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Uturuki", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Irani", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "Umoja wa Mataifa", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :sv %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "sv//posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Kina", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Storbritannien", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Ryssland", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasilien", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Tyskland", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Indien", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Frankrike", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Sydkorea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Sydafrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italien", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australien", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypten", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudiarabien", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesien", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexiko", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "kalkon", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "FN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :da %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/da/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerika", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "porcelæn", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Storbritannien", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Rusland", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasilien", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Tyskland", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Indien", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Frankrig", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Sydkorea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Sydafrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italien", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australien", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypten", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudi-Arabien", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesien", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "kalkun", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "DFN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :no %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/no/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "America", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "porselen", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Storbritannia", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Russland", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Tyskland", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Frankrike", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Sør-Korea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Sør-Afrika", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypt", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudi-Arabia", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexico", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "kalkun", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "FN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%elsif locale == :fi %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/fi/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "Amerikka", "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "Kiina", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "Britanniassa", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japani", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Venäjä", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasilia", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Saksa", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "Intia", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "Ranska", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Kanada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "Etelä-Korea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Etelä-Afrikka", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italia", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentiina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypti", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudi-Arabia", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Meksiko", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turkki", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "YK", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <% else %>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", "/en/posts" %></div></div>
+                <div class="navli nav-america"><div class="opacity"><%= link_to "America",  "/america"%></div></div>
+                <div class="navli nav-china"><div class="opacity"><%= link_to "China", "/china" %></div></div>
+                <div class="navli nav-uk"><div class="opacity"><%= link_to "UK", "/uk"%></div></div>
+                <div class="navli nav-japan"><div class="opacity"><%= link_to "Japan", "/japan" %></div></div>
+                <div class="navli nav-russian"><div class="opacity"><%= link_to "Russian", "/russian" %></div></div>
+                <div class="navli nav-brasil"><div class="opacity"><%= link_to "Brasil", "/brasil" %></div></div>
+                <div class="navli nav-germany"><div class="opacity"><%= link_to "Germany", "/germany" %></div></div>
+                <div class="navli nav-india"><div class="opacity"><%= link_to "India", "/india" %></div></div>
+                <div class="navli nav-nigeria"><div class="opacity"><%= link_to "Nigeria", "/nigeria" %></div></div>
+                <div class="navli nav-france"><div class="opacity"><%= link_to "France", "/france" %></div></div>
+                <div class="navli nav-canada"><div class="opacity"><%= link_to "Canada", "/canada" %></div></div>
+                <div class="navli nav-korea"><div class="opacity"><%= link_to "korea", "/korea" %></div></div>
+                <div class="navli nav-southafrica"><div class="opacity"><%= link_to "Southafrica", "/southafrica" %></div></div>
+                <div class="navli nav-italiana"><div class="opacity"><%= link_to "Italiana", "/italiana" %></div></div>
+                <div class="navli nav-argentina"><div class="opacity"><%= link_to "Argentina", "/argentina" %></div></div>
+                <div class="navli nav-australia"><div class="opacity"><%= link_to "Australia", "/australia" %></div></div>
+                <div class="navli nav-egypt"><div class="opacity"><%= link_to "Egypt", "/egypt" %></div></div>
+                <div class="navli nav-saudiarabia"><div class="opacity"><%= link_to "Saudiarabia", "/saudiarabia" %></div></div>
+                <div class="navli nav-indonesia"><div class="opacity"><%= link_to "Indonesia", "/indonesia" %></div></div>
+                <div class="navli nav-mexicanos"><div class="opacity"><%= link_to "Mexicanos", "/mexicanos" %></div></div>
+                <div class="navli nav-turkiye"><div class="opacity"><%= link_to "Turkiye", "/turkiye" %></div></div>
+                <div class="navli nav-iran"><div class="opacity"><%= link_to "Iran", "/iran" %></div></div>
+                <div class="navli nav-un"><div class="opacity"><%= link_to "UN", "/un" %></div></div>
+                <div class="navli nav-top"><div class="opacity"><%= link_to "TOP", :posts %></div></div>
+        <%end%>
+        </div>
 </div>
 

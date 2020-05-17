@@ -1,0 +1,40 @@
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:10;
+    /* text-align: center; */
+    height:5.8em;
+    color: white;
+    padding-top: 0.3%;
+    background-color:#222222;
+    font-size: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.7);
+}
+
+.logo{
+    height:100%;
+    font-size: 15px;
+    /* padding-top: 0.8%; */
+    text-align: center;
+    line-height: 3.8em;
+}
+.logo a{
+    color: white;
+    size:10px;
+    display: block;
+}
+.head-laungage{
+    margin-left: 1.2%;
+    margin-top: 1em;
+    float: left;
+    /* z-index: 20; */
+    
+}
+
+.head-laungage select{
+    margin-left: 0.3em;
+    cursor: pointer;
+    border-radius: 50px;
+    padding-left: 0.5em;
+}

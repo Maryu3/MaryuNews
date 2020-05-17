@@ -1,0 +1,100 @@
+//スマホ----------------------------------------------------------------------------------------------
+@media(max-width:650px){
+    .f-container{                                       //親
+        display: flex;
+        display: -webkit-flex;
+        //flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5.8em;
+    }
+    .f-container .f-item{                                //子
+        
+        margin:0 auto;                                //中央寄せ
+        width:80%;
+    }
+    
+    .menubar{                                             //親
+        display: flex;
+        //  flex-direction: row;
+        text-align: center;
+        margin-top: 7px;
+        // position: fixed;
+        // left:0;
+        background-color: rgb(0, 0, 0);
+        height:100%;  
+        width:15%;
+        overflow-y: auto; 
+        transform: translateZ(0);     
+        color:black;           
+    }
+
+    .f-menu{                                               //子
+        font-size:5px;
+        font-weight: bold;
+        letter-spacing: 0.9em;
+        line-height:7em;
+        height:20px;
+    }
+    
+    main{
+        margin-left: 12%;
+        margin-top: 3%;
+        // margin-right: 1%;
+        height:auto;
+        padding-left: 3%;
+        padding-top: 1%;
+        width: 100%;                  //あとでpc用のにも書き足した方がいいかも
+    }
+    
+
+    header{
+        position: fixed;
+        width:100%;
+        top:0;
+        z-index:10;
+        /* text-align: center; */
+        height:5.8em;
+        color: white;
+        // padding-top: 0.3%;
+        font-size: 10px;
+        box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.7);
+    }
+    footer{
+        border-top:inset 1px rgb(165, 160, 160) ; 
+        /* position: absolute;
+        bottom: 0; */
+        width:100%;
+        height:10%;
+        margin-left:13%;
+        margin-top:20%;
+        margin-top: 1500px;
+        clear: both;
+        color: gray;
+    }
+    
+    .f-item100{
+        color:white;
+        background-color:rgb(36, 35, 35);
+        order:0;
+        height:10em;
+        z-index:-1;
+        // flex-basis:150%;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+        width: 100px;
+        .post-news{
+            padding-top: 3em;
+            text-align: center;
+            letter-spacing: 1em;
+            // font-size: large;
+            font-weight: 600;
+        }
+        .post-country{display: none;}
+        .post-time{display: none;}
+        .pageview{
+            display: none;
+        }
+        .pageclose{
+            display: none;
+        }
+    }
+}

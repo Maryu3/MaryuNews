@@ -16,7 +16,7 @@ module Bocca3
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.time_zone = "Tokyo"
-    config.i18n.available_locales = %i(ja en)
+    config.i18n.available_locales = %i(ja en cn tw ar hi es fr bn ru pt id ms de pa jv ko ta vi te mr ur nl it tr pl gu fa th uk ml kn az or my el eu am sw sv da no fi)
     config.i18n.enforce_available_locales = true
     config.i18n.default_locale = :ja
     # config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
