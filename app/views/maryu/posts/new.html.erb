@@ -2,11 +2,11 @@
 
 <%= form_for @post do |form| %>  
     <div class="field">
-        <%= form.label :category_id, "category"  %>         <%#国%>
+        <%= form.label :category_id, "国  (category_id)"  %>         <%#国%>
         <%= form.text_field :category_id %>
     </div>
     <div class="field">
-        <%= form.label :country, "laungage_id"  %>          <%#言語%>
+        <%= form.label :country, "Laungage(country)"  %>          <%#言語%>
         <%= form.text_field :country %>
     </div>  
     <div class="field">
@@ -19,7 +19,7 @@
     </div>
     <div class="field">
         <%= form.label :content, "content"  %>
-        <%= form.text_area :content,cols: 50, rows: 5 %>        
+        <%= form.text_area :content,cols: 100, rows: 5 %>        
     </div> 
     <div class="action">
         <%= form.submit %>

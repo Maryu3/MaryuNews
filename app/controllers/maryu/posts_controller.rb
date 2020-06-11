@@ -14,7 +14,8 @@ class Maryu::PostsController < Maryu::Base
     def create
       @post = Post.new(post_params)                                                                        #formから送られてきたパラメーターを使ってモデルオブジェクト@post作成
       if @post.save
-        redirect_to [:maryu, @post] ,notice: "投稿しました"
+        # redirect_to [:maryu, @post] ,notice: "投稿しました"
+        redirect_to "/maryu" "投稿しました"
       else
         render "new"
       end

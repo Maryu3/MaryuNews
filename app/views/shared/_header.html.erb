@@ -1,53 +1,113 @@
-<%# <i class="fas fa-globe"></i> %>
-<div class=" fas fa-globe head-laungage fa-2x">
-    <select name="example1">
-    <option value="英語"><%= link_to "English" ,"/en/posts"%> </option>
-    <option value="簡体字"><%= link_to "简体中文" ,"/cn/posts"%>
-    <option value="繁体字"><%= link_to "繁體中文" ,"/tw/posts"%>
-    <option value="スペイン語"><%= link_to "Español" ,"/es/posts"%></option>
-    <option value="ヒンディー語"><%= link_to "हिन्दी" ,"/hi/posts"%></option>
-    <option value="アラビア語"><%= link_to "عربي" ,"/ar/posts"%> </option>
-    <option value="ベンガル語"><%= link_to "বাঙালি" ,"/bn/posts"%></option>
-    <option value="ロシア語"><%= link_to "русский" ,"/ru/posts"%></option>
-    <option value="ポルトガル語"><%= link_to "Português" ,"/pt/posts"%></option>
-    <option value="日本語"><%= link_to "日本語" ,"/ja/posts"%></option>
-    <option value="フランス語"><%= link_to "Le français" ,"/fr/posts"%>
-    <option value="マレー語"><%= link_to "Bahasa Melayu" ,"/ms/posts"%></option>
-    <option value="ドイツ語"><%= link_to "Deutsch" ,"/de/posts"%> </option>
-    <option value="パンジャーブ語"><%= link_to "ਪੰਜਾਬੀ" ,"/pa/posts"%></option>
-    <option value="ジャワ語"><%= link_to "Basa Jawa" ,"/jv/posts"%></option>
-    <option value="韓国語"><%= link_to "한국" ,"/ko/posts"%></option>
-    <option value="タミル語"><%= link_to "தமிழ்" ,"/ta/posts"%></option>
-    <option value="ベトナム語"><%= link_to "Tiếng việt" ,"/vi/posts"%> </option>
-    <option value="テルグ語"><%= link_to "తెలుగు" ,"/te/posts"%></option>
-    <option value="マラーティー語"><%= link_to "मराठी" ,"/mr/posts"%></option>
-    <option value="ウルドゥー語"><%= link_to "اردو" ,"/ur/posts"%></option>
-    <option value="オランダ語"><%= link_to "Nederlands" ,"/nl/posts"%></option>
-    <option value="イタリア語"><%= link_to "italiano" ,"/it/posts"%></option>
-    <option value="トルコ語"><%= link_to "Türk" ,"/tr/posts"%> </option>
-    <option value="ポーランド語"><%= link_to "Polski" ,"/pl/posts"%></option>
-    <option value="クジャラート語"><%= link_to "કુજારત" ,"/gu/posts"%></option>
-    <option value="ペルシア語"><%= link_to "فارسی" ,"/fa/posts"%></option>
-    <option value="タイ語"><%= link_to "ภาษาไทย" ,"/th/posts"%></option>
-    <option value="ウクライナ語"><%= link_to "Українська" ,"/uk/posts"%> </option>
-    <option value="マラヤーラム語"><%= link_to "മലയാളം" ,"/ml/posts"%></option>
-    <option value="カンナダ語"><%= link_to "ಕನ್ನಡ" ,"/kn/posts"%></option>
-    <option value="アゼルバイジャン語"><%= link_to "Azərbaycan" ,"/az/posts"%></option>
-    <option value="インドネシア語"><%= link_to "Orang indonesia" ,"/id/posts"%></option>
-    <option value="オリヤー語"><%= link_to "ଓଡିଆ" ,"/or/posts"%> </option>
-    <option value="ビルマ語"><%= link_to " မြန်မာဘာသာစကား" ,"/my/posts"%></option>
-    <option value="ギリシャ語"><%= link_to "Ελληνικά" ,"/el/posts"%></option>
-    <option value="バスク語"><%= link_to "Euskal" ,"/eu/posts"%></option>
-    <option value="アムハラ語"><%= link_to "አማርኛ" ,"/am/posts"%></option>
-    <option value="スワヒリ語"><%= link_to "Kiswahili" ,"/sw/posts"%></option>
-    <option value="スウェーデン語"><%= link_to "Svenska" ,"/sv/posts"%></option>
-    <option value="デンマーク語"><%= link_to "dansk" ,"/da/posts"%></option>
-    <option value="ノルウェー語"><%= link_to "norsk" ,"/no/posts"%></option>
-    <option value="フィンランド語"><%= link_to "suomalainen" ,"/fi/posts"%></option>
 
-    </select>
+
+<%= javascript_include_tag "laungages.js" %>
+
+
+<div class=" fas fa-globe head-laungage fa-2x laungages-menu">
+    <div class="l-menu">
+        <% if locale == :ja %>日本語
+        <%elsif locale == :en %>English
+        <%elsif locale == :cn %>简体中文
+        <%elsif locale == :tw %>繁體中文
+        <%elsif locale == :es %>Español
+        <%elsif locale == :hi %>हिन्दी
+        <%elsif locale == :ar %>عربي
+        <%elsif locale == :bn %>বাঙালি
+        <%elsif locale == :ru %>русский
+        <%elsif locale == :pt %>Português
+        <%elsif locale == :fr %>Le français
+        <%elsif locale == :ms %>Bahasa Melayu
+        <%elsif locale == :de %>Deutsch
+        <%elsif locale == :pa %>ਪੰਜਾਬੀ
+        <%elsif locale == :jv %>Basa Jawa
+        <%elsif locale == :ko %>한국
+        <%elsif locale == :ta %>தமிழ்
+        <%elsif locale == :vi %>Tiếng việt
+        <%elsif locale == :te %>తెలుగు
+        <%elsif locale == :mr %>मराठी
+        <%elsif locale == :ur %>اردو
+        <%elsif locale == :nl %>Nederlands
+        <%elsif locale == :it %>italiano
+        <%elsif locale == :tr %>Türk
+        <%elsif locale == :pl %>Polski
+        <%elsif locale == :gu %>કુજારત
+        <%elsif locale == :fa %>فارسی
+        <%elsif locale == :th %>ภาษาไทย
+        <%elsif locale == :uk %>Українська
+        <%elsif locale == :ml %>മലയാളം
+        <%elsif locale == :kn %>ಕನ್ನಡ
+        <%elsif locale == :az %>Azərbaycan
+        <%elsif locale == :id %>Orang indonesia
+        <%elsif locale == :or %>ଓଡିଆ
+        <%elsif locale == :my %>မြန်မာဘာသာစကား
+        <%elsif locale == :el %>ελληνική γλώσσα
+        <%elsif locale == :am %>አማርኛ
+        <%elsif locale == :sw %>Kiswahili
+        <%elsif locale == :sv %>Svenska
+        <%elsif locale == :da %>dansk
+        <%elsif locale == :no %>norsk
+        <%elsif locale == :fi %>suomalainen
+        <%else%>English 
+        <%end%>
+        <span><i class="fas fa-angle-down"></i></span>
+        
+    </div>
+
+    <div class="laungage-menu">
+    <div class="laungage-flex">
+        <p><%= link_to "English" ,"/en/posts"%></p>
+        <p><%= link_to "简体中文" ,"/cn/posts"%></p>
+        <p><%= link_to "繁體中文" ,"/tw/posts"%></p>
+        <p><%= link_to "Español" ,"/es/posts"%></p>
+        <p><%= link_to "हिन्दी" ,"/hi/posts"%></p>
+        <p><%= link_to "عربي" ,"/ar/posts"%></p>
+        <p><%= link_to "বাঙালি" ,"/bn/posts"%></p>
+        <p><%= link_to "русский" ,"/ru/posts"%></p>
+        <p><%= link_to "Português" ,"/pt/posts"%></p>
+        <p><%= link_to "日本語" ,"/ja/posts"%></p>
+        <p><%= link_to "Le français" ,"/fr/posts"%></p>
+        <p><%= link_to "Bahasa Melayu" ,"/ms/posts"%></p>
+        <p><%= link_to "Deutsch" ,"/de/posts"%></p>
+        <p><%= link_to "ਪੰਜਾਬੀ" ,"/pa/posts"%></p>
+        <p><%= link_to "Basa Jawa" ,"/jv/posts"%></p>
+        <p><%= link_to "한국" ,"/ko/posts"%></p>
+        <p><%= link_to "தமிழ்" ,"/ta/posts"%></p>
+        <p><%= link_to "Tiếng việt" ,"/vi/posts"%></p>
+        <p><%= link_to "తెలుగు" ,"/te/posts"%></p>
+        <p><%= link_to "मराठी" ,"/mr/posts"%></p>
+        <p><%= link_to "اردو" ,"/ur/posts"%></p>
+        <p><%= link_to "Nederlands" ,"/nl/posts"%></p>
+        <p><%= link_to "italiano" ,"/it/posts"%></p>
+        <p><%= link_to "Türk" ,"/tr/posts"%></p>
+        <p><%= link_to "Polski" ,"/pl/posts"%></p>
+        <p><%= link_to "કુજારત" ,"/gu/posts"%></p>
+        <p><%= link_to "فارسی" ,"/fa/posts"%></p>
+        <p><%= link_to "ภาษาไทย" ,"/th/posts"%></p>
+        <p><%= link_to "Українська" ,"/uk/posts"%></p>
+        <p><%= link_to "മലയാളം" ,"/ml/posts"%></p>
+        <p><%= link_to "ಕನ್ನಡ" ,"/kn/posts"%></p>
+        <p><%= link_to "Azərbaycan" ,"/az/posts"%></p>
+        <p><%= link_to "Orang indonesia" ,"/id/posts"%></p>
+        <p><%= link_to "ଓଡିଆ" ,"/or/posts"%></p>
+        <p><%= link_to " မြန်မာဘာသာစကား" ,"/my/posts"%></p>
+        <p><%= link_to "ελληνική γλώσσα" ,"/el/posts"%></p>
+        <p><%= link_to "Euskal" ,"/eu/posts"%></p>
+        <p><%= link_to "አማርኛ" ,"/am/posts"%></p>
+        <p><%= link_to "Kiswahili" ,"/sw/posts"%></p>
+        <p><%= link_to "Svenska" ,"/sv/posts"%></p>
+        <p><%= link_to "dansk" ,"/da/posts"%></p>
+        <p><%= link_to "norsk" ,"/no/posts"%></p>
+        <p><%= link_to "suomalainen" ,"/fi/posts"%></p>
+    </div>
+    
+    </div>
+
 </div>
 <div class="logo">
-    <a href="/" style="font-size:13pt;font-weight:bold;">BluePrint Anima</a>
+    <a href="/ja/posts" style="font-size:13pt;font-weight:bold;">
+    
+    <h1>VolvordOmen<%= image_tag("logologo.png",size:"30x30") %></h1>
+    
+    </a>
+    
 </div>
-

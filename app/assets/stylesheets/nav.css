@@ -24,10 +24,11 @@
 }
 
 .f-menu{
-    font-size:15px;
+    font-size:13px;
     font-weight: bold;
-    letter-spacing: 0.7em;
+    letter-spacing: 0.5em;
     line-height:7em;
+    
 }
 
 
@@ -58,7 +59,7 @@ nav.pagination{
 
 .nav-america{
     background-image: url("/america.png");
-    background-size: 100%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -81,11 +82,10 @@ nav.pagination{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    
 }
 .nav-uk{
     background-image: url("/uk.png");
-    background-size: 100%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     
@@ -143,7 +143,7 @@ nav.pagination{
 }
 .nav-canada{
     background-image: url("/canada.png");
-    background-size: 100%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     
