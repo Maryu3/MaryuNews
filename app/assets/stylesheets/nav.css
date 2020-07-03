@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width:12%;
-    margin-top: 7px;
+    width:14%;
+    margin-top: 1px;
     position: fixed;
     left:0;
     background-color: rgb(0, 0, 0);
@@ -27,9 +27,10 @@
     font-size:13px;
     font-weight: bold;
     letter-spacing: 0.5em;
-    line-height:7em;
+    line-height:8.5em;
     
 }
+
 
 
 nav.pagination{
@@ -42,6 +43,7 @@ nav.pagination{
 
 .f-menu .navli{
     border-bottom:2px solid rgb(88, 86, 86);
+    height: 8.5em;
 }
 /* .f-menu .navli a::after {
     font-family: "Font Awesome 5 Free";
@@ -59,7 +61,7 @@ nav.pagination{
 
 .nav-america{
     background-image: url("/america.png");
-    background-size: 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -85,7 +87,7 @@ nav.pagination{
 }
 .nav-uk{
     background-image: url("/uk.png");
-    background-size: 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     

@@ -3,54 +3,45 @@
     width:27%;
     float:left;
     height:150px;
-    margin-left: 3%;
+    margin-left: 1%;
     margin-top: 3%;
 }
 
-// .trix-content action-text-attachment{
-//     background-color: red;
-//     width:80px;
-//     height: 80px;
-// }
-
-.trix-content img{
-    width:80px;
+.trix-content{
+    
+    img{
+        width:80px;
     // float:right;
     border-radius: 2em;
     border: 1px solid rgb(216, 210, 210);
     margin-bottom: 6px;
     box-shadow:  1px 2px 2px rgba(0,0,0,0.7);
     // box-shadow:  -1px -2px 2px rgba(0,0,0,0.7)
+    }
+    .attachment{
+        width:2.6em;
+        height:2.6em
+    }
+    h1{
+        padding-bottom: 1em;
+        border-bottom:inset 2px rgb(121, 118, 118) ;
+        letter-spacing: 0.1em;
+        white-space: pre-line;
+        font-size: 16.5px;
+        line-height: 1.5em;
+        font-family: Cambria,serif,Times,Georgia,Cochin,'Times New Roman';
+        font-weight: 900;
+    }
+    a{
+        color:rgb(19, 66, 197);
+    }
+    
 }
 
 
 
 
-.trix-content .attachment{
-    width:2.6em;
-    height:2.6em
-}
 
-.trix-content h1{
-    padding-bottom: 1em;
-    border-bottom:inset 2px rgb(121, 118, 118) ;
-    letter-spacing: 0.2em;
-    white-space: pre-line; 
-    line-height: 1.5em;
-    font-family: Cambria,serif,Times,Georgia,Cochin,'Times New Roman';
-    font-weight: 900;
-}
-.trix-content a{
-    color:rgb(19, 66, 197);
-}
-// .trix-content a::after{
-//     position: absolute;
-//     content:attr(href);
-//     display:none;
-// }
-// .trix-content a:hover::after{
-//     display: block;
-// }
 .attachment{
     width: 100px;
 }
@@ -72,7 +63,7 @@
     padding-top: 1em;
     letter-spacing: 0.04em;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     
 }
 

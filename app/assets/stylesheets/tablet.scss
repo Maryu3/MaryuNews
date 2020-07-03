@@ -1,0 +1,355 @@
+//タブレット縦 / スマホ横----------------------------------------------------------------------------------------------
+@media(max-width:960px){
+    body{
+        overflow-x: hidden;    
+    }
+    #container{
+        overflow-x: hidden;
+    }
+    main{
+        height: 900%;
+    }
+    .f-container{                                       //親
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        width:100%;
+        .f-item{                                //子
+            padding-top:3%;
+            padding-bottom:2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-top:3%;
+            margin-bottom: 2%;
+            margin-left:11.5%;
+            margin-right: 3%;
+            flex-basis:30%;
+            font-size: 9px;
+            box-shadow: 1px 1px 24px 2px rgba(219, 216, 216, 0.5);
+            border-radius: 2em;
+            .post-time{
+                color: rgb(46, 46, 46);
+            }
+            .post-content{
+                font-size: 11px;
+                margin-top: 1.2%;
+                letter-spacing: 0.04em;
+                line-height: 1.8em;
+            }
+        }
+        .f-item100,.f-item101,.f-item102,.f-item103,.f-item104,.f-item105,.f-item106,.f-item107,.f-item108,.f-item109,.f-item110,.f-item111,.f-item112,.f-item113,.f-item114,.f-item115,.f-item116,.f-item117,.f-item118,.f-item119,.f-item120,.f-item121,.f-item122,
+        .f-item200,.f-item201,.f-item202,.f-item203,.f-item204,.f-item205,.f-item206,.f-item207,.f-item208,.f-item209,.f-item210,.f-item211,.f-item212,.f-item213,.f-item214,.f-item215,.f-item216,.f-item217,.f-item218,.f-item219,.f-item220,.f-item221,.f-item222,
+        .f-item300,.f-item301,.f-item302,.f-item303,.f-item304,.f-item305,.f-item306,.f-item307,.f-item308,.f-item309,.f-item310,.f-item311,.f-item312,.f-item313,.f-item314,.f-item315,.f-item316,.f-item317,.f-item318,.f-item319,.f-item320,.f-item321,.f-item322,
+        .f-item400,.f-item401,.f-item402,.f-item403,.f-item404,.f-item405,.f-item406,.f-item407,.f-item408,.f-item409,.f-item410,.f-item411,.f-item412,.f-item413,.f-item414,.f-item415,.f-item416,.f-item417,.f-item418,.f-item419,.f-item420,.f-item421,.f-item422,
+        .f-item500,.f-item501,.f-item502,.f-item503,.f-item504,.f-item505,.f-item506,.f-item507,.f-item508,.f-item509,.f-item510,.f-item511,.f-item512,.f-item513,.f-item514,.f-item515,.f-item516,.f-item517,.f-item518,.f-item519,.f-item520,.f-item521,.f-item522,
+        .f-item600,.f-item601,.f-item602,.f-item603,.f-item604,.f-item605,.f-item606,.f-item607,.f-item608,.f-item609,.f-item610,.f-item611,.f-item612,.f-item613,.f-item614,.f-item615,.f-item616,.f-item617,.f-item618,.f-item619,.f-item620,.f-item621,.f-item622,
+        .f-item700,.f-item701,.f-item702,.f-item703,.f-item704,.f-item705,.f-item706,.f-item707,.f-item708,.f-item709,.f-item710,.f-item711,.f-item712,.f-item713,.f-item714,.f-item715,.f-item716,.f-item717,.f-item718,.f-item719,.f-item720,.f-item721,.f-item722,
+        .f-item800,.f-item801,.f-item802,.f-item803,.f-item804,.f-item805,.f-item806,.f-item807,.f-item808,.f-item809,.f-item810,.f-item811,.f-item812,.f-item813,.f-item814,.f-item815,.f-item816,.f-item817,.f-item818,.f-item819,.f-item820,.f-item821,.f-item822,
+        .f-item900,.f-item901,.f-item902,.f-item903,.f-item904,.f-item905,.f-item906,.f-item907,.f-item908,.f-item909,.f-item910,.f-item911,.f-item912,.f-item913,.f-item914,.f-item915,.f-item916,.f-item917,.f-item918,.f-item919,.f-item920,.f-item921,.f-item922,
+        .f-item1000,.f-item1001,.f-item1002,.f-item1003,.f-item1004,.f-item1005,.f-item1006,.f-item1007,.f-item1008,.f-item1009,.f-item1010,.f-item1011,.f-item1012,.f-item1013,.f-item1014,.f-item1015,.f-item1016,.f-item1017,.f-item1018,.f-item1019,.f-item1020,.f-item1021,.f-item1022,
+        .f-item1100,.f-item1101,.f-item1102,.f-item1103,.f-item1104,.f-item1105,.f-item1106,.f-item1107,.f-item1108,.f-item1109,.f-item1110,.f-item1111,.f-item1112,.f-item1113,.f-item1114,.f-item1115,.f-item1116,.f-item1117,.f-item1118,.f-item1119,.f-item1120,.f-item1121,.f-item1122,
+        .f-item1200,.f-item1201,.f-item1202,.f-item1203,.f-item1204,.f-item1205,.f-item1206,.f-item1207,.f-item1208,.f-item1209,.f-item1210,.f-item1211,.f-item1212,.f-item1213,.f-item1214,.f-item1215,.f-item1216,.f-item1217,.f-item1218,.f-item1219,.f-item1220,.f-item1221,.f-item1222,
+        .f-item1300,.f-item1301,.f-item1302,.f-item1303,.f-item1304,.f-item1305,.f-item1306,.f-item1307,.f-item1308,.f-item1309,.f-item1310,.f-item1311,.f-item1312,.f-item1313,.f-item1314,.f-item1315,.f-item1316,.f-item1317,.f-item1318,.f-item1319,.f-item1320,.f-item1321,.f-item1322,
+        .f-item1400,.f-item1401,.f-item1402,.f-item1403,.f-item1404,.f-item1405,.f-item1406,.f-item1407,.f-item1408,.f-item1409,.f-item1410,.f-item1411,.f-item1412,.f-item1413,.f-item1414,.f-item1415,.f-item1416,.f-item1417,.f-item1418,.f-item1419,.f-item1420,.f-item1421,.f-item1422,
+        .f-item1500,.f-item1501,.f-item1502,.f-item1503,.f-item1504,.f-item1505,.f-item1506,.f-item1507,.f-item1508,.f-item1509,.f-item1510,.f-item1511,.f-item1512,.f-item1513,.f-item1514,.f-item1515,.f-item1516,.f-item1517,.f-item1518,.f-item1519,.f-item1520,.f-item1521,.f-item1522,
+        .f-item1600,.f-item1601,.f-item1602,.f-item1603,.f-item1604,.f-item1605,.f-item1606,.f-item1607,.f-item1608,.f-item1609,.f-item1610,.f-item1611,.f-item1612,.f-item1613,.f-item1614,.f-item1615,.f-item1616,.f-item1617,.f-item1618,.f-item1619,.f-item1620,.f-item1621,.f-item1622,
+        .f-item1700,.f-item1701,.f-item1702,.f-item1703,.f-item1704,.f-item1705,.f-item1706,.f-item1707,.f-item1708,.f-item1709,.f-item1710,.f-item1711,.f-item1712,.f-item1713,.f-item1714,.f-item1715,.f-item1716,.f-item1717,.f-item1718,.f-item1719,.f-item1720,.f-item1721,.f-item1722,
+        .f-item1800,.f-item1801,.f-item1802,.f-item1803,.f-item1804,.f-item1805,.f-item1806,.f-item1807,.f-item1808,.f-item1809,.f-item1810,.f-item1811,.f-item1812,.f-item1813,.f-item1814,.f-item1815,.f-item1816,.f-item1817,.f-item1818,.f-item1819,.f-item1820,.f-item1821,.f-item1822,
+        .f-item1900,.f-item1901,.f-item1902,.f-item1903,.f-item1904,.f-item1905,.f-item1906,.f-item1907,.f-item1908,.f-item1909,.f-item1910,.f-item1911,.f-item1912,.f-item1913,.f-item1914,.f-item1915,.f-item1916,.f-item1917,.f-item1918,.f-item1919,.f-item1920,.f-item1921,.f-item1922,
+        .f-item2000,.f-item2001,.f-item2002,.f-item2003,.f-item2004,.f-item2005,.f-item2006,.f-item2007,.f-item2008,.f-item2009,.f-item2010,.f-item2011,.f-item2012,.f-item2013,.f-item2014,.f-item2015,.f-item2016,.f-item2017,.f-item2018,.f-item2019,.f-item2020,.f-item2021,.f-item2022,
+        .f-item2100,.f-item2101,.f-item2102,.f-item2103,.f-item2104,.f-item2105,.f-item2106,.f-item2107,.f-item2108,.f-item2109,.f-item2110,.f-item2111,.f-item2112,.f-item2113,.f-item2114,.f-item2115,.f-item2116,.f-item2117,.f-item2118,.f-item2119,.f-item2120,.f-item2121,.f-item2122,
+        .f-item2200,.f-item2201,.f-item2202,.f-item2203,.f-item2204,.f-item2205,.f-item2206,.f-item2207,.f-item2208,.f-item2209,.f-item2210,.f-item2211,.f-item2212,.f-item2213,.f-item2214,.f-item2215,.f-item2216,.f-item2217,.f-item2218,.f-item2219,.f-item2220,.f-item2221,.f-item2222,
+        .f-item2300,.f-item2301,.f-item2302,.f-item2303,.f-item2304,.f-item2305,.f-item2306,.f-item2307,.f-item2308,.f-item2309,.f-item2310,.f-item2311,.f-item2312,.f-item2313,.f-item2314,.f-item2315,.f-item2316,.f-item2317,.f-item2318,.f-item2319,.f-item2320,.f-item2321,.f-item2322,
+        .f-item2400,.f-item2401,.f-item2402,.f-item2403,.f-item2404,.f-item2405,.f-item2406,.f-item2407,.f-item2408,.f-item2409,.f-item2410,.f-item2411,.f-item2412,.f-item2413,.f-item2414,.f-item2415,.f-item2416,.f-item2417,.f-item2418,.f-item2419,.f-item2420,.f-item2421,.f-item2422,
+        .f-item2500,.f-item2501,.f-item2502,.f-item2503,.f-item2504,.f-item2505,.f-item2506,.f-item2507,.f-item2508,.f-item2509,.f-item2510,.f-item2511,.f-item2512,.f-item2513,.f-item2514,.f-item2515,.f-item2516,.f-item2517,.f-item2518,.f-item2519,.f-item2520,.f-item2521,.f-item2522,
+        .f-item2600,.f-item2601,.f-item2602,.f-item2603,.f-item2604,.f-item2605,.f-item2606,.f-item2607,.f-item2608,.f-item2609,.f-item2610,.f-item2611,.f-item2612,.f-item2613,.f-item2614,.f-item2615,.f-item2616,.f-item2617,.f-item2618,.f-item2619,.f-item2620,.f-item2621,.f-item2622,
+        .f-item2700,.f-item2701,.f-item2702,.f-item2703,.f-item2704,.f-item2705,.f-item2706,.f-item2707,.f-item2708,.f-item2709,.f-item2710,.f-item2711,.f-item2712,.f-item2713,.f-item2714,.f-item2715,.f-item2716,.f-item2717,.f-item2718,.f-item2719,.f-item2720,.f-item2721,.f-item2722,
+        .f-item2800,.f-item2801,.f-item2802,.f-item2803,.f-item2804,.f-item2805,.f-item2806,.f-item2807,.f-item2808,.f-item2809,.f-item2810,.f-item2811,.f-item2812,.f-item2813,.f-item2814,.f-item2815,.f-item2816,.f-item2817,.f-item2818,.f-item2819,.f-item2820,.f-item2821,.f-item2822,
+        .f-item2900,.f-item2901,.f-item2902,.f-item2903,.f-item2904,.f-item2905,.f-item2906,.f-item2907,.f-item2908,.f-item2909,.f-item2910,.f-item2911,.f-item2912,.f-item2913,.f-item2914,.f-item2915,.f-item2916,.f-item2917,.f-item2918,.f-item2919,.f-item2920,.f-item2921,.f-item2922,
+        .f-item3000,.f-item3001,.f-item3002,.f-item3003,.f-item3004,.f-item3005,.f-item3006,.f-item3007,.f-item3008,.f-item3009,.f-item3010,.f-item3011,.f-item3012,.f-item3013,.f-item3014,.f-item3015,.f-item3016,.f-item3017,.f-item3018,.f-item3019,.f-item3020,.f-item3021,.f-item3022,
+        .f-item3100,.f-item3101,.f-item3102,.f-item3103,.f-item3104,.f-item3105,.f-item3106,.f-item3107,.f-item3108,.f-item3109,.f-item3110,.f-item3111,.f-item3112,.f-item3113,.f-item3114,.f-item3115,.f-item3116,.f-item3117,.f-item3118,.f-item3119,.f-item3120,.f-item3121,.f-item3122,
+        .f-item3200,.f-item3201,.f-item3202,.f-item3203,.f-item3204,.f-item3205,.f-item3206,.f-item3207,.f-item3208,.f-item3209,.f-item3210,.f-item3211,.f-item3212,.f-item3213,.f-item3214,.f-item3215,.f-item3216,.f-item3217,.f-item3218,.f-item3219,.f-item3220,.f-item3221,.f-item3222,
+        .f-item3300,.f-item3301,.f-item3302,.f-item3303,.f-item3304,.f-item3305,.f-item3306,.f-item3307,.f-item3308,.f-item3309,.f-item3310,.f-item3311,.f-item3312,.f-item3313,.f-item3314,.f-item3315,.f-item3316,.f-item3317,.f-item3318,.f-item3319,.f-item3320,.f-item3321,.f-item3322,
+        .f-item3400,.f-item3401,.f-item3402,.f-item3403,.f-item3404,.f-item3405,.f-item3406,.f-item3407,.f-item3408,.f-item3409,.f-item3410,.f-item3411,.f-item3412,.f-item3413,.f-item3414,.f-item3415,.f-item3416,.f-item3417,.f-item3418,.f-item3419,.f-item3420,.f-item3421,.f-item3422,
+        .f-item3500,.f-item3501,.f-item3502,.f-item3503,.f-item3504,.f-item3505,.f-item3506,.f-item3507,.f-item3508,.f-item3509,.f-item3510,.f-item3511,.f-item3512,.f-item3513,.f-item3514,.f-item3515,.f-item3516,.f-item3517,.f-item3518,.f-item3519,.f-item3520,.f-item3521,.f-item3522,
+        .f-item3600,.f-item3601,.f-item3602,.f-item3603,.f-item3604,.f-item3605,.f-item3606,.f-item3607,.f-item3608,.f-item3609,.f-item3610,.f-item3611,.f-item3612,.f-item3613,.f-item3614,.f-item3615,.f-item3616,.f-item3617,.f-item3618,.f-item3619,.f-item3620,.f-item3621,.f-item3622,
+        .f-item3700,.f-item3701,.f-item3702,.f-item3703,.f-item3704,.f-item3705,.f-item3706,.f-item3707,.f-item3708,.f-item3709,.f-item3710,.f-item3711,.f-item3712,.f-item3713,.f-item3714,.f-item3715,.f-item3716,.f-item3717,.f-item3718,.f-item3719,.f-item3720,.f-item3721,.f-item3722,
+        .f-item3800,.f-item3801,.f-item3802,.f-item3803,.f-item3804,.f-item3805,.f-item3806,.f-item3807,.f-item3808,.f-item3809,.f-item3810,.f-item3811,.f-item3812,.f-item3813,.f-item3814,.f-item3815,.f-item3816,.f-item3817,.f-item3818,.f-item3819,.f-item3820,.f-item3821,.f-item3822,
+        .f-item3900,.f-item3901,.f-item3902,.f-item3903,.f-item3904,.f-item3905,.f-item3906,.f-item3907,.f-item3908,.f-item3909,.f-item3910,.f-item3911,.f-item3912,.f-item3913,.f-item3914,.f-item3915,.f-item3916,.f-item3917,.f-item3918,.f-item3919,.f-item3920,.f-item3921,.f-item3922,
+        .f-item4000,.f-item4001,.f-item4002,.f-item4103,.f-item4004,.f-item4005,.f-item4006,.f-item4007,.f-item4008,.f-item4009,.f-item4010,.f-item4011,.f-item4012,.f-item4013,.f-item4014,.f-item4015,.f-item4016,.f-item4017,.f-item4018,.f-item4019,.f-item4020,.f-item4021,.f-item4022,
+        .f-item4100,.f-item4101,.f-item4102,.f-item4103,.f-item4104,.f-item4105,.f-item4106,.f-item4107,.f-item4108,.f-item4109,.f-item4110,.f-item4111,.f-item4112,.f-item4113,.f-item4114,.f-item4115,.f-item4116,.f-item4117,.f-item4118,.f-item4119,.f-item4120,.f-item4121,.f-item4122,
+        .f-item4200,.f-item4201,.f-item4202,.f-item4203,.f-item4204,.f-item4205,.f-item4206,.f-item4207,.f-item4208,.f-item4209,.f-item4210,.f-item4211,.f-item4212,.f-item4213,.f-item4214,.f-item4215,.f-item4216,.f-item4217,.f-item4218,.f-item4219,.f-item4220,.f-item4221,.f-item4222,
+        .f-item4300,.f-item4301,.f-item4302,.f-item4303,.f-item4304,.f-item4305,.f-item4306,.f-item4307,.f-item4308,.f-item4309,.f-item4310,.f-item4311,.f-item4312,.f-item4313,.f-item4314,.f-item4315,.f-item4316,.f-item4317,.f-item4318,.f-item4319,.f-item4320,.f-item4321,.f-item4322{
+            color:white;
+            background-color:rgb(36, 35, 35);
+            order:0;
+            height:11em;
+            z-index:-1;
+            flex-basis:90%;
+            box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+            margin-top: 6%;
+            margin-bottom: 8%;
+            margin-right: 3%;
+            margin-left: 11%;
+            // line-height:10em;
+            .post-news{
+                text-align: center;
+                letter-spacing: 0.7em;
+                font-weight: 600;
+                font-size: 11px;
+                .trix-content{
+                    height:100%;
+                    line-height: 8em;
+                }
+            }
+            .post-country{display: none;}
+            .post-time{display: none;}
+            .pageview{
+                display: none;
+            }
+            .pageclose{
+                display: none;
+            }
+        }
+        .f-item:first-child{
+            margin-top:7%;
+        }
+    }
+    .trix-content{
+        h1{
+            line-height: 1.5em;
+            letter-spacing: 0.06em;
+            font-size: 12px;
+        }
+    }
+    .menubar{                                             //親
+        display: flex;
+        text-align: center;
+        margin-top: 40px;
+        background-color: rgb(0, 0, 0);
+        height:100%;  
+        width:22%;
+        overflow-y: auto; 
+        transform: translateZ(0);     
+        color:black;    
+        font-size: 5px;       
+        .f-menu{                                               //子
+            .navli{
+                font-size:4px;
+                font-weight: bold;
+                letter-spacing: 0.2em;
+                height:15em;
+                line-height:15em;
+            }
+        }
+    }
+    .menubar::-webkit-scrollbar {
+        width: 2px;
+    }
+    .menubar::-webkit-scrollbar-thumb {
+        background: rgba(6, 17, 37, 0.808);
+        border-radius: 10px;
+    }
+    .menubar::-webkit-scrollbar-track {
+        background: rgba(238, 235, 235, 0.877);
+    }
+    header{
+            height:40px;
+            .fa-lg{
+                font-size:1.5em;
+            }
+            .head-laungage{
+            margin-top: 1%;
+            width:22%;
+                .l-menu{
+                    width:80%;
+                    height:4em;
+                    font-size: 4px;
+                    line-height: 4em;
+                }
+                .laungage-menu{
+                    width: 80%;
+                }
+            }
+            .logo{
+                padding-top:5px;
+                height:20%;
+                a{
+                    letter-spacing: 1px;
+                    
+                    h1{
+                        font-size: 100%;
+                    }
+                    img{
+                        margin-left: 0;
+                        padding-left: 0;
+                        width:20px;
+                        height:20px;
+                    }
+                }
+            }
+            
+        .header-menu{
+            margin-right: 1.8%;
+            #nav-drawer {
+                #nav-open span, #nav-open span:before, #nav-open span:after {
+                    position: absolute;
+                    height: 1px;/*線の太さ*/
+                    width: 2.5em;/*長さ*/
+                    border-radius: 3px;
+                    background: rgb(233, 231, 235);
+                    display: block;
+                    content: '';
+                    cursor: pointer;
+                }
+                #nav-open span:before {
+                    bottom: -8px;
+                }
+                #nav-open span:after {
+                    bottom: -16px;
+                }
+                /*閉じる用の薄黒カバー*/
+                #nav-close {
+                    display: none;/*はじめは隠しておく*/
+                    position: fixed;
+                    z-index: 99;
+                    top: 0;/*全体に広がるように*/
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: black;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                }
+        
+                /*中身*/
+                #nav-content {
+                    overflow: auto;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 9999;/*最前面に*/
+                    width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+                    max-width: 330px;/*最大幅（調整してください）*/
+                    height: 100%;
+                    background: #fff;/*背景色*/
+                    transition: .3s ease-in-out;/*滑らかに表示*/
+                    -webkit-transform: translateX(-105%);
+                    transform: translateX(-105%);/*左に隠しておく*/
+                    p{color: red;}
+                }
+                
+                /*チェックが入ったらもろもろ表示*/
+                #nav-input:checked ~ #nav-close {
+                    display: block;/*カバーを表示*/
+                    opacity: .5;
+                }
+                
+                #nav-input:checked ~ #nav-content {
+                    -webkit-transform: translateX(0%);
+                    transform: translateX(0%);/*中身を表示（右へスライド）*/
+                    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+                }
+
+            }
+        }
+    }
+
+
+    footer{
+        border-top:inset 1px rgb(165, 160, 160) ; 
+        // position: absolute;
+        // bottom: 0;
+        width:100%;
+        
+        display:block;
+        margin-left:12%;
+        // margin-top:auto;
+        /*margin-bottom: 7%;*/
+        
+        color: gray;
+        .footer-logo{
+            // text-align: center;
+            color: black;
+            width:100%;
+            
+            margin:0;
+            padding: 0;
+            display:block;
+            letter-spacing: 0.1em;
+            line-height: 30px;
+            h2{
+                padding-top: 1em;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 3px;
+            }
+            
+        }
+        .footer-sns{
+            width:100%;
+            text-align: center;
+            margin-bottom: 8%;
+            margin-top: 8%;
+            // float:right;
+            margin-left: 0;
+            display:block;
+            .twitter{
+                color:white;
+                background-color:rgb(43, 151, 223);
+                width: 5em;
+                height:1.2em;
+                text-align: center;
+                line-height:1.2em;
+                // margin-top: 1em;
+                border-radius: 2em;
+                display: inline-block;
+            }
+            .facebook{
+                color:white;
+                background-color:rgb(13, 15, 172);
+                width: 5em;
+                height:1.2em;
+                text-align: center;
+                line-height:1.2em;
+                border-radius: 2em;
+                display: inline-block;
+            }
+            .pocket{
+                color:white;
+                background-color:rgb(172, 13, 48);
+                width: 5em;
+                height:1.2em;
+                text-align: center;
+                line-height:1.2em;
+                border-radius: 2em;
+                display: inline-block;
+            }
+        }
+        .footer-policy{
+            
+            // width:100%;
+            // // float:right;
+            
+            // display:block;
+            // margin-left: 20%;
+            width:100%;
+            text-align: center;
+            height:100px;
+            // float:right;
+            margin-left: 0;
+            
+                p{
+                    font-size: 2px;
+                }
+            
+        }
+        
+    }
+    
+}
+
+

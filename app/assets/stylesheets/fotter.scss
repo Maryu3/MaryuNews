@@ -1,21 +1,93 @@
-#container{
-    min-height: 3000px;
-    position: relative;
-    padding-bottom: 120px;/*←footerの高さ*/
-    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-}
+
 footer{
     border-top:inset 1px rgb(165, 160, 160) ; 
-    position: absolute;
-    bottom: 0; 
+    // position: absolute;
+    // bottom: 0; 
+    // left:0;
     width:100%;
-    height:200px;
-    margin-left:13%;
-    margin-top:25%;
-    /*margin-bottom: 7%;*/
-    clear: both;
-    color: gray;
+    height:150px;
+    display: inline-block;
+    // margin-top:25%;
+    // /*margin-bottom: 7%;*/
+    // clear: both;
+    // color: gray;
+    
+    
+    a{
+        color: gray;
+    }
+    .footer-logo{
+        // text-align: center;
+        color: black;
+        width:20%;
+        margin-left: 20%;
+        margin-right:0;
+        padding: 0;
+        display: inline-block;
+        letter-spacing: 0.1em;
+        line-height: 30px;
+        h2{
+            padding-top: 1em;
+            text-align: center;
+        }
+        
+    }
+    .footer-policy{
+        color: black;
+        height:100px;
+        width:10%;
+        margin-left: 5%;
+        // float:right;
+        line-height: 30px;
+        display: inline-block;
+        p{
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+        
+    }
+    .footer-sns{
+        color: black;
+        
+        width:15%;
+        margin-left: 15%;
+        margin-bottom: 15%;
+        // float:right;
+        // text-align: center;
+        display: inline-block;
+        .twitter{
+            color:white;
+            background-color:rgb(43, 151, 223);
+            width: 6em;
+            height:1.2em;
+            text-align: center;
+            line-height:1.2em;
+            // margin-top: 1em;
+            border-radius: 2em;
+        }
+        .facebook{
+            color:white;
+            background-color:rgb(13, 15, 172);
+            width: 6em;
+            height:1.2em;
+            text-align: center;
+            line-height:1.2em;
+            border-radius: 2em;
+        }
+        .pocket{
+            color:white;
+            background-color:rgb(172, 13, 48);
+            width: 6em;
+            height:1.2em;
+            text-align: center;
+            line-height:1.2em;
+            border-radius: 2em;
+        }
+    }
+    
+    
 }
-footer a{
-    color: gray;
+
+.contact-us{
+    margin-left: 20%;
 }

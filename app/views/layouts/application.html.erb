@@ -20,7 +20,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= favicon_link_tag '/logologo.png'%>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -33,9 +33,9 @@
       <header><%= render "shared/header" %></header>
       <aside><%= render "shared/sidebar" %></aside>
       <main>
-      <%= yield %>
+      <%= yield %>      
       </main>
-      <footer><%= render "shared/footer" %></footer>
+      <footer><%= render "shared/footer"%></footer>
     </div>
   </body>
 </html>

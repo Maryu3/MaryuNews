@@ -3,7 +3,7 @@
 <%= javascript_include_tag "laungages.js" %>
 
 
-<div class=" fas fa-globe head-laungage fa-2x laungages-menu">
+<div class=" fas fa-globe head-laungage fa-lg laungages-menu">
     <div class="l-menu">
         <% if locale == :ja %>日本語
         <%elsif locale == :en %>English
@@ -101,13 +101,41 @@
     </div>
     
     </div>
+</div>
 
-</div>
+
+
+
 <div class="logo">
-    <a href="/ja/posts" style="font-size:13pt;font-weight:bold;">
-    
-    <h1>VolvordOmen<%= image_tag("logologo.png",size:"30x30") %></h1>
-    
-    </a>
-    
+        <a href="/ja/posts"><h1>Volvord<%= image_tag("logologo.png") %> news</h1></a>
+
+        <%# <div class="header-menu">
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p>12</p>
+                <p>12</p>
+                <p>12</p>
+                <p>12</p>
+                <p>12</p>
+            </div>
+        </div> %>
 </div>
+
+<div class="header-menu">
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p><%= link_to "要人", "/ar/mexicanos" %></p>
+                <p><%= link_to "各国データ", "/ar/mexicanos" %></p>
+                <p><%= link_to "政府機関", "/ar/mexicanos" %></p>
+                <p><%= link_to "政治制度", "/ar/mexicanos" %></p>
+                <p><%= link_to "用語", "/ar/mexicanos" %></p>
+                
+            </div>
+</div>
+

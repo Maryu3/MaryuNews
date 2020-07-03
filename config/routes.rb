@@ -8,10 +8,11 @@ Rails.application.routes.draw do
     root "top#index"
     resources :posts
   end
-
-  get 'top' => "home#top"
-  get "about"=> "home#about"
   root 'posts#index'
+  get 'top' => "home#top"
+  get "about"=> "top#about"
+  get "mail" => "top#mail"
+  get "policy" => "top#policy"
   
   scope '(:locale)', locale: /#{I18n.available_locales.map(&:to_s).join('|')}/ do
   resources :posts #, only: [:index, :show]
@@ -54,6 +55,10 @@ Rails.application.routes.draw do
   # get "india" => "categories#india"
   # get "france" => "categories#france"
   # get "canada" => "categories#canada"
+  get "USPresident" => "word#USPresident"
+  get "nikkei"  => "word#nikkei"
+  get "kokkai "=> "word#kokkai"
+  
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
