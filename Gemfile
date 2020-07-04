@@ -5,19 +5,7 @@ ruby '2.5.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
-# Use sqlite3 as the database for Active Record
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  #ここ1行追加
-  gem 'sqlite3'
-end
-
-# この3行を一番下に追加
-group :production do
-  gem 'pg', '0.18.4'
-end
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -48,6 +36,7 @@ gem 'rails-i18n', '~> 6.0.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3'
 end
 
 group :development do
@@ -76,3 +65,8 @@ gem 'rails_admin', '~> 2.0'
 gem 'wikipedia-client'
 gem 'selenium-webdriver'
 gem 'gon'
+
+
+group :production do
+  gem 'pg'
+end
